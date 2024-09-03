@@ -1,0 +1,155 @@
+/* xs */
+@media screen and (max-width: 599px) {
+
+  .home-div {
+    margin-top: 100px;
+  }
+  .avatarcircle-img{
+    width: 250px;
+    height: 250px;
+   }
+
+  .wave-imageone{
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    position: relative;
+    top: -3px;
+  }
+  .home-div-content{
+    padding-right: 5px;
+   }
+   .div-home-location{
+    margin-top: 15px;
+  }
+
+  .usernewimage-about{
+    width: 260px;
+    height: 300px;
+  }
+ 
+  .ul-font-about{
+    margin-left: -20px;
+  }
+  .userimage-grid{
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-icon{
+    width: 90px;
+    height: 90px;
+  }
+
+  .skillimage-proj{
+    width: 200px;
+    height: 130px;
+  }
+  .project-box-card {
+    padding: 20px;
+  }
+  .project-box-card-2 {
+    padding: 20px;
+  }
+
+  .footer-div {
+    margin-top: 60px;
+  }
+
+
+  /* Fonts */
+  
+  .h1-font-smallscreen{
+    font-size: 2.625rem !important;
+  }
+  
+  .h2-variant{
+    font-size: 1rem !important;
+  }
+
+  .h6-variant{
+    font-size: 13px !important;
+  }
+
+  .li-experience{
+    font-size: 0.850rem;
+  }
+
+  .ul-experience{
+    margin-left: -20px;
+  }
+
+  .subtitle2-variant{
+    font-size: 0.850rem !important;
+  }
+
+  .h5-variant{
+    font-size: 1.2rem !important;
+  }
+  
+  .body1-variant {
+    font-size: 0.850rem !important;
+  }
+
+  .body2-variant {
+    font-size: 0.885rem !important;
+  }
+
+  .li-font-about{
+    font-size: 0.850rem !important;
+  }
+
+  /* animation */
+  .marquee-content{
+    display: flex;
+    gap: 35px;
+  }
+
+}
+
+/* sm */
+
+  @media (min-width: 600px) and (max-width: 899px) {
+    .home-div {
+      margin-top: 120px;
+    }
+    .home-div-content{
+      padding-right: 10px;
+     }
+
+    .div-home-location{
+      margin-top: 20px;
+    }
+
+    .experience-yearTypo{
+      margin-left: 2px;
+    }
+
+    .userimage-grid{
+      display: flex;
+      justify-content: center;
+    }
+
+    .image-icon{
+      width: 100px;
+      height: 100px;
+    }
+
+    .marquee-content{
+      display: flex;
+      gap: 40px;
+    }
+  }
+
+  /* md */
+  @media (min-width: 900px) and (max-width: 1199px) {
+  }
+
+  /* lg */
+
+  @media (min-width: 1200px) and (max-width: 1535px) {
+  }
+
+  /* xl */
+  @media (min-width: 1536px){
+  }
