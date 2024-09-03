@@ -55,8 +55,10 @@
 }
 
 .avatarcircle-img {
-  width: 310px;
-  height: 310px;
+  width: 400px;
+  height: 432px;
+  position: relative;
+  top: -20px
 }
 
 .wave-imageone {

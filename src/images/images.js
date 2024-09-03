@@ -19,6 +19,7 @@ import react from "../assest/icon-react.webp"
 import hub from "../assest/hub.webp"
 import gown from "../assest/gown.webp"
 import school from "../assest/school.webp"
+import avtwo from "../assest/avtwo.png"
 
 export {
         avataricon,
@@ -41,6 +42,7 @@ export {
         react,
         hub,
         gown,
-        school
+        school,
+        avtwo
 
 }
