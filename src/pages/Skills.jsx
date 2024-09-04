@@ -1,8 +1,9 @@
-import { Box, Container, Stack, Typography } from '@mui/material'
+import { Box, Container, Stack, Typography, useTheme } from '@mui/material'
 import React from 'react'
-import { bootstrap, css, github, html, js, mantine, mui, nextjs, react, reactquery, reduxtoolkit } from '../images/images'
+import { bootstrap, css, github, githublogo, html, js, mantine, mui, nextjs, react, reactquery, reduxtoolkit } from '../images/images'
 
 const Skills = () => {
+  const theme = useTheme()
   return (
     <div style={{ marginTop: "30px", marginBottom: "15px" }}>
       <Container maxWidth="lg" >
@@ -68,21 +69,25 @@ const Skills = () => {
                   Next Js
                 </Typography>
               </Box>
-
+            
               <Box textAlign={"center"} className="marquee-item">
                 <img src={reduxtoolkit} alt='react' className='skill-icon-two' />
                 <Typography variant='body2' className="body2-variant" textAlign={"center"}>
                   Toolkit
                 </Typography>
               </Box>
+              
               <Box textAlign={"center"} className="marquee-item">
                 <img src={reactquery} alt='react' className='skill-icon' />
                 <Typography variant='body2' className="body2-variant" textAlign={"center"}>
                   React Query
                 </Typography>
               </Box>
-              <Box textAlign={"center"} className="marquee-item">
-                <img src={github} alt='react' className='skill-icon' />
+                 <Box textAlign={"center"} className="marquee-item">
+                  {theme?.palette?.mode === "light" ? 
+                   <img src={githublogo} alt='react' className='skill-icon' /> :
+                   <img src={github} alt='react' className='skill-icon' />
+                }
                 <Typography variant='body2' className="body2-variant" textAlign={"center"}>
                   GitHub
                 </Typography>

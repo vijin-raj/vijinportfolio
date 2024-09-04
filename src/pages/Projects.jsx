@@ -1,6 +1,6 @@
 import { Box, Container, Typography, Grid, Stack, Chip, useTheme } from '@mui/material'
 import React from 'react'
-import { gown, hub, school, skillimageNew } from '../images/images'
+import { gown, hub, school} from '../images/images'
 import { LaunchOutlined } from '@mui/icons-material'
 
 const Projects = () => {
@@ -21,7 +21,7 @@ const Projects = () => {
           <div className="card-custom" style={{ backgroundColor: theme?.palette?.mode === "dark" && "#111827" }}>
             <Grid container spacing={2}>
 
-              <Grid item xs={12} md={6} >
+              <Grid item xs={12} md={6}>
           
                 <Box sx={{ display: "flex", justifyContent: "center" }} className="project-box-card"
                   style={{ backgroundColor: theme?.palette?.mode === "dark" && "#374151" }}

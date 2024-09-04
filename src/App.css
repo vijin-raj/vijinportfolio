@@ -106,8 +106,8 @@
   height: 50px;
 }
 .image-icon {
-  width: 180px;
-  height: 180px;
+  width: 220px;
+  height: 60px;
 }
 
 /* projects */
@@ -252,8 +252,7 @@
 .marquee-item {
   flex: 0 0 10vw;
   margin: 0 0.5vw;
-/*   flex: 0 0 20vw; */
-/*   margin: 0 2vw; */
+
 }
 .marquee-content:hover {
   animation-play-state: paused;
@@ -264,5 +263,5 @@
   
   @keyframes scrolling-reverse {
     0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); } 
+    100% { transform: translateX(-90%); } 
     }

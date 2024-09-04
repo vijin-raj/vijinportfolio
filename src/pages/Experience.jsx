@@ -1,7 +1,7 @@
 import { Box, Container, Grid, Stack, Typography, useTheme } from '@mui/material'
 import React from 'react'
 import { PaperStyle } from '../theme/helpertheme'
-import { avataricon } from '../images/images'
+import {capecom, darklogocape, darkmlogo, msquared } from '../images/images'
 
 
 
@@ -22,9 +22,14 @@ const Experience = () => {
                 <Box mt={5} display={"flex"} justifyContent={"center"} >
                     <PaperStyle elevation={3} >
                         <Grid container spacing={{ xs: 1, md: 2 }}>
-                            <Grid item xs={12} md={4}>
-                                <Box display={"flex"} justifyContent={{ xs: "flex-start", md: "center" }}>
-                                    <img src={avataricon} alt='icon' className='image-icon' />
+                            <Grid item xs={12} md={4} sx={{display: "flex", alignItems: "center"}}>
+                                <Box display={"flex"} justifyContent={{ xs: "flex-start", md: "center" }} >
+                                    {
+                                        theme?.palette?.mode === "light" ? 
+                                        <img src={capecom} alt='icon' className='image-icon' /> :
+                                        <img src={darklogocape} alt='icon' className='image-icon' />
+                                    }
+                                   
                                 </Box>
                             </Grid>
                             <Grid item xs={12} md={8}>
@@ -61,9 +66,14 @@ const Experience = () => {
                 <Box mt={5} display={"flex"} justifyContent={"center"} >
                     <PaperStyle elevation={3} sx={{ marginBottom: "20px" }}>
                         <Grid container spacing={{ xs: 1, md: 2 }}>
-                            <Grid item xs={12} md={4} >
-                                <Box display={"flex"} justifyContent={{ xs: "flex-start", md: "center" }}>
-                                    <img src={avataricon} alt='icon' className='image-icon' />
+                        <Grid item xs={12} md={4} sx={{display: "flex", alignItems: "center"}}>
+                                <Box display={"flex"} justifyContent={{ xs: "flex-start", md: "center" }} >
+                                    {
+                                        theme?.palette?.mode === "light" ? 
+                                        <img src={msquared} alt='icon' className='image-icon' /> :
+                                        <img src={darkmlogo} alt='icon' className='image-icon' />
+                                    }
+                                   
                                 </Box>
                             </Grid>
                             <Grid item xs={12} md={8} >
