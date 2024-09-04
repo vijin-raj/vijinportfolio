@@ -1,11 +1,10 @@
 import { AppBar, Button, Chip, Paper, styled, Switch, Toolbar } from "@mui/material"
 
-
-
   const Toolbarstyle = styled(Toolbar)({
     display: "flex",
     justifyContent: 'space-between',
   })
+
    const Appbarstyle = styled(AppBar)({
        boxShadow: "none",
     })
@@ -94,12 +93,5 @@ import { AppBar, Button, Chip, Paper, styled, Switch, Toolbar } from "@mui/mater
             },
           }));
           
-    export {
-        Toolbarstyle,
-        Appbarstyle,
-        ButtonStyle,
-        ChipStyle,
-        PaperStyle,
-        MaterialUISwitch
-    }
+    export {Toolbarstyle,Appbarstyle,ButtonStyle,ChipStyle,PaperStyle, MaterialUISwitch}
   

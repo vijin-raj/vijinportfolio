@@ -5,8 +5,8 @@
     margin-top: 100px;
   }
   .avatarcircle-img{
-    width: 280px;
-    height: 320px;
+    width: 248px;
+    height: 310px;
    }
 
   .wave-imageone{
@@ -37,13 +37,13 @@
   }
 
   .image-icon{
-    width: 90px;
-    height: 90px;
+    width: 145px;
+    height: 41px;
   }
 
   .skillimage-proj{
-    width: 200px;
-    height: 130px;
+    width: 250px;
+    height: 180px;
   }
   .project-box-card {
     padding: 20px;
@@ -104,6 +104,17 @@
     display: flex;
     gap: 35px;
   }
+ 
+  .marquee-content{
+    display: flex;
+    animation: scrolling-reverse 15s linear infinite;
+    /* gap: 30px; */
+  }
+
+  @keyframes scrolling-reverse {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } 
+    }
 
 }
 
@@ -131,8 +142,8 @@
     }
 
     .image-icon{
-      width: 100px;
-      height: 100px;
+      width: 150px;
+      height: 44px;
     }
 
     .marquee-content{
@@ -146,6 +157,7 @@
       position: relative;
       top: 0px;
      }
+  
   }
 
   /* md */

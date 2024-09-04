@@ -1,11 +1,12 @@
-import { Grid, Stack, Typography, Container, Box, useTheme } from '@mui/material'
+import { Grid, Stack, Typography, Container, Box, useTheme, useMediaQuery } from '@mui/material'
 import React from 'react'
-import { avatarCircle, avtwo, handyhifi, online } from '../images/images'
+import { avatarCircle, handyhifi, mobileavatar, online } from '../images/images'
 import FmdGoodOutlinedIcon from '@mui/icons-material/FmdGoodOutlined';
 import { Toolbarstyle } from '../theme/helpertheme';
 
 const Home = () => {
   const theme = useTheme()
+  const isMobile = useMediaQuery('(max-width:599px)');
   return (
     <Box component={"main"} >
       <Toolbarstyle />
@@ -52,7 +53,7 @@ const Home = () => {
 
           </Grid>
           <Grid item xs={12} md={3} display={"flex"} justifyContent={{ xs: "center", md: "flex-end" }} >
-              <img src={avatarCircle} alt='avatarcircle' className='avatarcircle-img' /> 
+              <img src={isMobile ? mobileavatar: avatarCircle} alt='avatarcircle' className='avatarcircle-img' /> 
           </Grid>
 
         </Grid>
