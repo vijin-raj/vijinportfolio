@@ -2,7 +2,7 @@ import { Box, Container, Divider, Drawer, List, ListItem, ListItemButton, ListIt
 import React, { useContext } from 'react'
 import { Appbarstyle, MaterialUISwitch, Toolbarstyle } from '../theme/helpertheme'
 import MenuIcon from '@mui/icons-material/Menu';
-import {CloseOutlined ,InfoOutlined, EngineeringOutlined, WbIncandescentOutlined, ListAltOutlined, CallOutlined} from '@mui/icons-material';
+import {CloseOutlined ,InfoOutlined, EngineeringOutlined, WbIncandescentOutlined, ListAltOutlined, CallOutlined, AccountCircleOutlined, PsychologyAltOutlined} from '@mui/icons-material';
 import { ThemeContext } from '../theme/theme';
 import { Link as ScrollLink } from 'react-scroll';
 
@@ -27,35 +27,35 @@ export const Header = () => {
             role="presentation"
             onKeyDown={toggleDrawer(anchor, false)}
         >
-            <ListSubheader >
-                <Stack direction={"row"} justifyContent={"space-between"} >
+            <ListSubheader  sx={{background: theme?.palette?.mode === "dark" && "#000000" }}>
+                <Stack direction={"row"} justifyContent={"space-between"} mt={2} mb={2}>
                     <Box sx={{ display: "flex" }} >
 
-                        <Box variant='h4' mt={1.3} className="Box-head-menu-1" >
+                        <Box  mt={1.3} className="Box-head-menu-1" sx={{ backgroundColor: theme?.palette?.mode === "light" ? "#3178c6" : "#FFFFFF" }}>
                             <Typography variant='h4' className='h4-menuvariant' component={"h1"} mt={0.2}> V</Typography>
                         </Box>
-                        <Typography variant='h3' className='h3-menuvariant' mt={1.2} ml={0.4}>
+                        <Typography variant='h3' className='h3-menuvariant' mt={1.6} ml={0.4}>
                             ijin Raj
                         </Typography>
 
                     </Box>
-                    <Box mt={0.5}>
+                    <Box>
                         <CloseOutlined color='grey' fontSize='small' onClick={toggleDrawer(anchor, false)} />
                     </Box>
                 </Stack>
             </ListSubheader>
-            <Divider />
+            <Divider sx={{background: theme?.palette?.mode === "dark" && "#FFF"}} variant="middle" />
             <List>
                 {['About', 'Skills', 'Experience', 'Projects', "Contact"].map((text, index) => (
 
                     <ListItem key={text} disablePadding>
                         <ScrollLink to={text} smooth={true} duration={500} className='style-pointer'>
                             <ListItemButton onClick={toggleDrawer(anchor, false)}>
-                                <ListItemIcon>
+                                <ListItemIcon sx={{minWidth: "35px"}}>
                                     {index === 0 ? (
-                                        <InfoOutlined />
+                                        <AccountCircleOutlined />
                                     ) : index === 1 ? (
-                                        <EngineeringOutlined />
+                                        <PsychologyAltOutlined />
                                     ) :  index === 2 ? (
                                         <WbIncandescentOutlined />
                                     ) : index === 3 ? (
@@ -72,7 +72,7 @@ export const Header = () => {
 
                 ))}
             </List>
-            <Divider />
+            <Divider sx={{background: theme?.palette?.mode === "dark" && "#FFF" }} variant="middle" />
 
             <Stack direction={"row"} justifyContent={"space-between"} alignItems={"center"} mt={1} pr={2} pl={2}>
                 <Box>

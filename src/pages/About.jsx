@@ -1,6 +1,6 @@
 import { Typography, Container, Box, Grid, Stack, useTheme } from '@mui/material'
 import React from 'react'
-import { usernewimage } from '../images/images'
+import { pic, usernewimage } from '../images/images'
 
 
 const About = () => {
@@ -20,7 +20,11 @@ const About = () => {
           <Box mt={10}>
             <Grid container spacing={2}>
               <Grid item xs={12} md={6} className='userimage-grid'>
-                <img src={usernewimage} alt='userimage' className='usernewimage-about' />
+                {
+                  theme?.palette?.mode === "light" ?
+                  <img src={usernewimage} alt='userimage' className='usernewimage-about' />
+                  : <img src={pic} alt='userimage' className='usernewimage-about' />
+                }  
               </Grid>
 
               <Grid item xs={12} md={6} >
