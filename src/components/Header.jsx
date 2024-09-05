@@ -2,7 +2,7 @@ import { Box, Container, Divider, Drawer, List, ListItem, ListItemButton, ListIt
 import React, { useContext } from 'react'
 import { Appbarstyle, MaterialUISwitch, Toolbarstyle } from '../theme/helpertheme'
 import MenuIcon from '@mui/icons-material/Menu';
-import {CloseOutlined ,InfoOutlined, EngineeringOutlined, WbIncandescentOutlined, ListAltOutlined, CallOutlined, AccountCircleOutlined, PsychologyAltOutlined} from '@mui/icons-material';
+import {CloseOutlined , WbIncandescentOutlined, ListAltOutlined, CallOutlined, AccountCircleOutlined, PsychologyAltOutlined} from '@mui/icons-material';
 import { ThemeContext } from '../theme/theme';
 import { Link as ScrollLink } from 'react-scroll';
 
