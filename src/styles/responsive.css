@@ -67,6 +67,15 @@
     font-size: 1rem !important;
   }
 
+  .h3-menuvariant{
+    font-size: 21px !important; 
+  }
+
+  .h4-menuvariant{
+    font-size: 20px !important;
+    font-weight: 800 !important;
+  }
+
   .h6-variant{
     font-size: 13px !important;
   }

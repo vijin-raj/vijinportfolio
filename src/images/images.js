@@ -23,6 +23,7 @@ import capecom from "../assest/logo_black.png"
 import msquared from "../assest/m2logo-1.png"
 import darkmlogo from "../assest/mlogo.png"
 import darklogocape from "../assest/logowhite.png"
+import pic from "../assest/pic.png"
 
 
 export {
@@ -50,5 +51,6 @@ export {
         msquared,
         githublogo,
         darklogocape,
-        darkmlogo
+        darkmlogo,
+        pic
 }

@@ -86,7 +86,18 @@ export const ThemeContextProvider = ({ children }) => {
                 textTransform: "unset"
             }
 
+        },
+    components: {
+        MuiDrawer:{
+        styleOverrides: {
+            paper: {
+                background: mode === "dark" && "#000000",
+                
+            }
         }
+        }
+    }
+
     }), [mode])
 
     const toggleTheme = () => {
